@@ -10,7 +10,7 @@ export SONAR_METRICS_PATH=${SONAR_METRICS_PATH:-"./sonar-metrics.json"}
 export SONAR_EXTENSION_DIR="${HOME}/.sonarless/extensions"
 export SONAR_PASSWORD_FILE="${HOME}/.sonarless/.password"
 
-# Generate a random password for SonarQube admin user (includes special character for SonarQube requirements)
+# Generate a random password for SonarQube admin user  (includes special character for SonarQube requirements)
 # Password is persisted to file to ensure consistency across GitHub Actions steps
 function get_or_create_password() {
     if [[ -f "${SONAR_PASSWORD_FILE}" ]]; then
