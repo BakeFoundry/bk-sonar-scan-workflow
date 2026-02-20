@@ -73,4 +73,3 @@ jobs:
         with:
           sonar-source-path: "."
 ```
-
