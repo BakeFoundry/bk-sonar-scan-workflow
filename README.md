@@ -74,17 +74,3 @@ jobs:
           sonar-source-path: "."
 ```
 
-### .NET Scan
-For .NET projects, you must provide the build command:
-
-```yaml
-jobs:
-  sonar-scan:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: SonarLess Scan
-        uses: BakeFoundry/bk-sonar-scan-workflow@v1
-        with:
-          dotnet-build-command: "dotnet build MyProject.sln"
-```
